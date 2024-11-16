@@ -6,7 +6,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animation_cookbook/AnimatedContainer.dart';
+import 'package:flutter_animation_cookbook/my_celebreation_screen.dart';
 import 'package:flutter_animation_cookbook/page_route_transition/page_route_transition.dart';
+import 'package:flutter_animation_cookbook/parallax_animation_example.dart';
 import 'package:flutter_animation_cookbook/product_screen.dart';
 import 'package:flutter_animation_cookbook/sliding_drawer.dart';
 import 'package:flutter_animation_cookbook/staggered_animation/staggered_animation_demo.dart';
@@ -187,7 +189,24 @@ class _AnimationSampleState extends State<AnimationSample> {
                   MaterialPageRoute(builder: (context) => PageRouteTransition()),
                 );
               },),
-
+              CustomElevatedButton(
+                buttonText: "Celebration Animation",
+                backgroundColor: Colors.indigo,
+                textColor: Colors.white,onPressed: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MyCelebrationScreen()),
+                );
+              },),
+              CustomElevatedButton(
+                buttonText: "Parallax Animation",
+                backgroundColor: Colors.indigo,
+                textColor: Colors.white,onPressed: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ExampleParallax()),
+                );
+              },),
 
             ],
           ),
