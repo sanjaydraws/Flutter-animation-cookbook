@@ -12,6 +12,7 @@ import 'package:flutter_animation_cookbook/parallax_animation_example.dart';
 import 'package:flutter_animation_cookbook/product_screen.dart';
 import 'package:flutter_animation_cookbook/sliding_drawer.dart';
 import 'package:flutter_animation_cookbook/staggered_animation/staggered_animation_demo.dart';
+import 'package:flutter_animation_cookbook/tinder_swipe_card.dart';
 import 'package:flutter_animation_cookbook/tween_animation_builder_example.dart';
 
 import 'Tween_animation_builder_example2.dart';
@@ -205,6 +206,15 @@ class _AnimationSampleState extends State<AnimationSample> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => ExampleParallax()),
+                );
+              },),
+              CustomElevatedButton(
+                buttonText: "SwipeCards Animation",
+                backgroundColor: Colors.indigo,
+                textColor: Colors.white,onPressed: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => TinderSwipeCards()),
                 );
               },),
 
