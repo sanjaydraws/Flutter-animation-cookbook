@@ -22,6 +22,7 @@ import 'animated_list/animated_list_demo2.dart';
 import 'animated_opacity_example.dart';
 import 'animation_controller.dart';
 import 'animation_swatcher/animated_swatcher_example.dart';
+import 'flip_card_animation.dart';
 import 'heartbeat_animation.dart';
 import 'hero/first_screen.dart';
 import 'lottie_animation/lottie_animation.dart';
@@ -215,6 +216,15 @@ class _AnimationSampleState extends State<AnimationSample> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => TinderSwipeCards()),
+                );
+              },),
+              CustomElevatedButton(
+                buttonText: "FlipCard Animation",
+                backgroundColor: Colors.indigo,
+                textColor: Colors.white,onPressed: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => FlipCard()),
                 );
               },),
 
