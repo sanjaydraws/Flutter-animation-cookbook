@@ -10,8 +10,8 @@
 | **Hero Animation**     | **Animated List1** | **Animated List2** |
 | ![Hero Animation](https://github.com/sanjaydraws/Flutter-animation-cookbook/blob/main/screenshots/hero_animationgif.gif) | ![Animated List](https://github.com/sanjaydraws/Flutter-animation-cookbook/blob/main/screenshots/animated_list_anim1.gif) |  ![Animated List](https://github.com/sanjaydraws/Flutter-animation-cookbook/blob/main/screenshots/animated_list_anim2.gif) |
 | **AnimatedSwitcher**   | **Lottie Animation** | **Page Route Animation** |
-| ![AnimatedSwitcher](https://github.com/sanjaydraws/Flutter-animation-cookbook/blob/main/screenshots/animated_switcher.gif) | ![Lottie Animation](https://github.com/sanjaydraws/Flutter-animation-cookbook/blob/main/screenshots/lottie_anim.gif) | ![Page Route](https://github.com/sanjaydraws/Flutter-animation-cookbook/blob/main/screenshots/page_route_anim.gif) |
-|  **Staggered Animation** | **Parallax Animation** |                     |
-| ![Parallax](https://github.com/sanjaydraws/Flutter-animation-cookbook/blob/main/screenshots/staggered_anim.gif)  | ![Parallax](https://github.com/sanjaydraws/Flutter-animation-cookbook/blob/main/screenshots/parallax_anim.gif)  |                    |
+| ![AnimatedSwitcher](https://github.com/sanjaydraws/Flutter-animation-cookbook/blob/main/screenshots/animated_switcher.gif) |  ![Lottie Animation](https://github.com/sanjaydraws/Flutter-animation-cookbook/blob/main/screenshots/lottie_anim.gif)  | ![Page Route](https://github.com/sanjaydraws/Flutter-animation-cookbook/blob/main/screenshots/page_route_anim.gif) |
+|  **Staggered Animation** | **Parallax Animation** | **Celebration Animation** |
+| ![Parallax](https://github.com/sanjaydraws/Flutter-animation-cookbook/blob/main/screenshots/staggered_anim.gif)  | ![Parallax](https://github.com/sanjaydraws/Flutter-animation-cookbook/blob/main/screenshots/parallax_anim.gif)  | ![Parallax](https://github.com/sanjaydraws/Flutter-animation-cookbook/blob/main/screenshots/celebration_anim.gif) |
 
 ---
