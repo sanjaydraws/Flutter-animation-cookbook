@@ -12,7 +12,7 @@ import 'package:flutter_animation_cookbook/parallax_animation_example.dart';
 import 'package:flutter_animation_cookbook/product_screen.dart';
 import 'package:flutter_animation_cookbook/sliding_drawer.dart';
 import 'package:flutter_animation_cookbook/staggered_animation/staggered_animation_demo.dart';
-import 'package:flutter_animation_cookbook/tinder_swipe_card.dart';
+import 'package:flutter_animation_cookbook/card_animation/tinder_swipe_card.dart';
 import 'package:flutter_animation_cookbook/tween_animation_builder_example.dart';
 
 import 'Tween_animation_builder_example2.dart';
@@ -22,7 +22,7 @@ import 'animated_list/animated_list_demo2.dart';
 import 'animated_opacity_example.dart';
 import 'animation_controller.dart';
 import 'animation_swatcher/animated_swatcher_example.dart';
-import 'flip_card_animation.dart';
+import 'card_animation/flip_card_animation.dart';
 import 'heartbeat_animation.dart';
 import 'hero/first_screen.dart';
 import 'lottie_animation/lottie_animation.dart';
