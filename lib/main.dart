@@ -40,3 +40,90 @@ class MyApp extends StatelessWidget {
 }
 
 
+class Dmeo extends StatefulWidget {
+  const Dmeo({super.key});
+
+  @override
+  State<Dmeo> createState() => _DmeoState();
+}
+
+class _DmeoState extends State<Dmeo> {
+  int selectedIndex = 0; // Store the selected index
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        color: Colors.white,
+        child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          padding: const EdgeInsets.symmetric(horizontal: 10.0),
+          itemCount: 10, // Adjust as needed
+          itemBuilder: (BuildContext context, int index) {
+            bool isSelected = index == selectedIndex; // Check if the current item is selected
+
+            return GestureDetector(
+              onTap: () {
+                // Update selectedIndex when an item is tapped
+                setState(() {
+                  selectedIndex = index; // Update the selected index
+                });
+              },
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min, // Ensures the column only takes necessary space
+                  children: [
+                    // Image for the food item
+                    Container(
+                      width: 100.0, // Set the size of the image
+                      height: 100.0, // Set the size of the image
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: NetworkImage(
+                            'https://media.istockphoto.com/id/466149291/photo/italian-pizza-with-cherry-tomatoes.webp?a=1&b=1&s=612x612&w=0&k=20&c=KFGQZWsPTLxt8Sp5SQGJlNOuLA1_5GorNEFtZy-cuU4=',
+                          ),
+                          fit: BoxFit.cover,
+                        ),
+                        borderRadius: BorderRadius.circular(8.0),
+                      ),
+                    ),
+                    const SizedBox(height: 8.0), // Space between the image and the text
+                    Text(
+                      'Food ${index + 1}', // Dynamic food name
+                      style: TextStyle(
+                        color: Colors.grey.shade700,
+                        fontSize: 14.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Text(
+                      'Food ${index + 1}', // Dynamic food name
+                      style: TextStyle(
+                        color: Colors.grey.shade700,
+                        fontSize: 14.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+
+                    // Bottom border that is highlighted red for the selected item
+                    Container(
+                      width: double.infinity,
+                      height: 12.0, // Bottom line height
+                      color: Colors.purple,
+                    ),
+                  ],
+                ),
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+
+
+
+
+

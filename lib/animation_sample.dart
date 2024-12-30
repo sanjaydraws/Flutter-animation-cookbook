@@ -11,6 +11,7 @@ import 'package:flutter_animation_cookbook/page_route_transition/page_route_tran
 import 'package:flutter_animation_cookbook/parallax_animation_example.dart';
 import 'package:flutter_animation_cookbook/product_screen.dart';
 import 'package:flutter_animation_cookbook/sliding_drawer.dart';
+import 'package:flutter_animation_cookbook/sliver/sliver_example.dart';
 import 'package:flutter_animation_cookbook/staggered_animation/staggered_animation_demo.dart';
 import 'package:flutter_animation_cookbook/card_animation/tinder_swipe_card.dart';
 import 'package:flutter_animation_cookbook/tween_animation_builder_example.dart';
@@ -23,6 +24,7 @@ import 'animated_opacity_example.dart';
 import 'animation_controller.dart';
 import 'animation_swatcher/animated_swatcher_example.dart';
 import 'card_animation/flip_card_animation.dart';
+import 'custom/custom_elevated_button.dart';
 import 'heartbeat_animation.dart';
 import 'hero/first_screen.dart';
 import 'lottie_animation/lottie_animation.dart';
@@ -227,7 +229,15 @@ class _AnimationSampleState extends State<AnimationSample> {
                   MaterialPageRoute(builder: (context) => FlipCard()),
                 );
               },),
-
+              CustomElevatedButton(
+                buttonText: "SliverExample",
+                backgroundColor: Colors.indigo,
+                textColor: Colors.white,onPressed: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SliverExample()),
+                );
+              },),
             ],
           ),
         ),
@@ -238,29 +248,3 @@ class _AnimationSampleState extends State<AnimationSample> {
 
 
 
-// Define a reusable button widget that accepts text, background color, and text color
-class CustomElevatedButton extends StatelessWidget {
-  final String buttonText;
-  final Color backgroundColor;
-  final Color textColor;
-  final VoidCallback onPressed;
-
-  CustomElevatedButton({
-    required this.buttonText,
-    required this.backgroundColor,
-    required this.textColor,
-    required this.onPressed,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: onPressed,
-      style: ElevatedButton.styleFrom(
-        backgroundColor: backgroundColor, // Background color
-        foregroundColor: textColor, // Text color
-      ),
-      child: Text(buttonText),
-    );
-  }
-}
